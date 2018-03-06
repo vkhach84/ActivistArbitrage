@@ -1,0 +1,24 @@
+\documentclass{article}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\emph{Vardan and Fez}
+
+
+<<echo=TRUE,fig=TRUE>>=
+library("ggplot2")
+ndata <- read.csv("AAPL SPX 10Y OiL - Copy.csv")
+attach(ndata)
+##testing the creation of PDF
+ggplot(ndata,aes(y=aapl,x=spx))+geom_point(mapping = NULL)+stat_summary(fun.data=mean_cl_normal) + 
+  geom_smooth(method='lm',formula=aapl~spx)+theme_bw() +
+  labs(y = "AAPL",
+       x = "SPX",
+       title = "Regression Line")
+
+@
+
+
+
+\end{document}

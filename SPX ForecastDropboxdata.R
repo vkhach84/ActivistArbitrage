@@ -1,3 +1,4 @@
+#install packages by one command BY Faizan
 library("forecast")
 library("tidyr")
 library(dplyr)#library needed for my lag function to work

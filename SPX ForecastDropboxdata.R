@@ -3,7 +3,7 @@ library("forecast")
 library("tidyr")
 library(dplyr)#library needed for my lag function to work
 library(grid)
-library("fpp")
+
 library("zoo")
 library("ggplot2")
 library("ggplot2")

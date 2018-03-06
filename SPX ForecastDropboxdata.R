@@ -6,6 +6,7 @@ library(grid)
 library("fpp")
 library("zoo")
 library("ggplot2")
+library("ggplot2")
 #install packages by one command
 #installed.packages(c("ggplot2","zoo","fpp","dplyr","grid","tidyr","forecast"))
 suppressWarnings(source("../AnalyticsLibraries/library.R"))
